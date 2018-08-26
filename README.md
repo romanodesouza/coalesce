@@ -19,17 +19,30 @@ import (
 	"github.com/romanoaugusto88/coalesce"
 )
 
+// OptionalParams holds values that are not required.
+type OptionalParams struct {
+	Int    *int
+	String *string
+}
+
+// Params represents the "final" structure to be used.
+type Params struct {
+	Int    int
+	String string
+}
+
+// DefaultParams holds the optional params fallback values.
+var DefaultParams = Params{Int: 10, String: "default string"}
+
 func main() {
-	// optionalValue could be a value given by user input which is not required.
-	var optionalValue *int
-	// defaultValue is the fallback value for the optional value.
-	var defaultValue int = 10
+	// OptionalParams could be given by user input containing non-required field values.
+	optional := OptionalParams{}
+	// The coalesce functions are handy when initializing structs:
+	params := Params{
+		Int:    *coalesce.Int(optional.Int, &DefaultParams.Int),
+		String: *coalese.String(optional.String, &DefaultParams.String),
+	}
 
-	// Then, get the input value or the default one hassle-free.
-	value := *coalesce.Int(optionalValue, &defaultValue)
-
-	// ...
-	
 	// Check out the godoc reference for more functions available, such as:
 	_ = *coalesce.Bool(args...)
 	_ = coalesce.Error(args...)
