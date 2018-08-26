@@ -3,10 +3,9 @@
 Coalesce built-in Go types.
 
 # motivation
-Go doesn't has a [null coalescing operator](https://en.wikipedia.org/wiki/Null_coalescing_operator).
-This package brings the capability to return the first non-nil value in a list, for each built-in type.
+Go doesn't has a [null coalescing operator](https://en.wikipedia.org/wiki/Null_coalescing_operator), so this package brings the capability to return the first non-nil value in a list.
 
-This is pretty much inspired by the `COALESCE()` sql function.
+This is pretty much inspired by the `COALESCE()` SQL function.
 
 # example
 
