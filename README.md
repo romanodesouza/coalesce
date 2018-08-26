@@ -15,6 +15,10 @@ go get github.com/romanoaugusto88/coalesce
 ```go
 package main
 
+import (
+	"github.com/romanoaugusto88/coalesce"
+)
+
 func main() {
 	// optionalValue could be a value given by user input which is not required.
 	var optionalValue *int
