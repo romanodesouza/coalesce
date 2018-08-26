@@ -4,5 +4,3 @@ set -e
 
 golint -set_exit_status
 megacheck
-errcheck
-unused
