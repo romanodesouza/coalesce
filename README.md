@@ -25,5 +25,10 @@ func main() {
 	value := *coalesce.Int(optionalValue, &defaultValue)
 
 	// ...
+	
+	// Check out the godoc reference for more functions available, such as:
+	_ = *coalesce.Bool(args...)
+	_ = coalesce.Error(args...)
+	_ = coalesce.StringSlice(args...)
 }
 ```
