@@ -5,6 +5,11 @@ Coalesce built-in Go types.
 # motivation
 Go doesn't has a [null coalescing operator](https://en.wikipedia.org/wiki/Null_coalescing_operator), so this package brings the capability to return the first non-nil value in a list, pretty much inspired by the `COALESCE()` SQL function.
 
+# install
+```
+go get github.com/romanoaugusto88/coalesce
+```
+
 # example
 
 ```go
