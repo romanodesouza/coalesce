@@ -40,7 +40,7 @@ func main() {
 	// The coalesce functions are handy when initializing structs:
 	params := Params{
 		Int:    *coalesce.Int(optional.Int, &DefaultParams.Int),
-		String: *coalese.String(optional.String, &DefaultParams.String),
+		String: *coalesce.String(optional.String, &DefaultParams.String),
 	}
 
 	// Check out the godoc reference for more functions available, such as:
