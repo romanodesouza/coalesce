@@ -1,0 +1,11 @@
+dist: trusty
+language: go
+go: 1.11.x
+git:
+  depth: 1
+install:
+- go get golang.org/x/lint/golint
+- go get honnef.co/go/tools/cmd/megacheck
+script:
+- ./.lint
+- ./.test
