@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/romanoaugusto88/coalesce"
+	"github.com/romanodesouza/coalesce"
 )
 
 func TestString(t *testing.T) {

@@ -1,1 +1,1 @@
-module github.com/romanoaugusto88/coalesce
+module github.com/romanodesouza/coalesce
