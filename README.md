@@ -42,10 +42,5 @@ func main() {
 		Int:    *coalesce.Int(optional.Int, &DefaultParams.Int),
 		String: *coalesce.String(optional.String, &DefaultParams.String),
 	}
-
-	// Check out the godoc reference for more functions available, such as:
-	_ = *coalesce.Bool(args...)
-	_ = coalesce.Error(args...)
-	_ = coalesce.StringSlice(args...)
 }
 ```
