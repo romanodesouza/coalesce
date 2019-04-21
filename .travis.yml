@@ -7,7 +7,7 @@ install:
 - go get golang.org/x/lint/golint
 - go get honnef.co/go/tools/cmd/megacheck
 script:
-- ./.lint
-- ./.test
+- make lint
+- make test
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+- bash <(curl -s https://codecov.io/bash)
